@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: consul-retry-demo
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      retry:
+        initial-interval: 1000
+        max-attempts: 7
+        max-interval: 2000
+        multiplier: 1.1
